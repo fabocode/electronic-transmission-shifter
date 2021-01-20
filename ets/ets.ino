@@ -10,6 +10,13 @@ void setup() {
 
 void loop() {
     // put your main code here, to run repeatedly:
+    relay.relay1_on();
+    Serial.println("relay 1 is ON");
+    delay(1000);
+    relay.relay1_off();
+    Serial.println("relay 1 is OFF");
+    delay(1000);
+
     relay.relay2_on();
     Serial.println("relay 2 is ON");
     delay(1000);
